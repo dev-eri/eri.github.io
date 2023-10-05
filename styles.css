@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 62.5%;
+    letter-spacing: 0.05rem;
+}
+
+img {
+    width: 100%;
+  }
+
+hr {
+    margin-top: 0.5rem;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+    .nav h4 {
+        float: left;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+
+    .nav h4 a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav-list {
+        display: flex;
+        margin-top: 2rem;
+        margin-right: 2rem;
+        list-style-type: none;
+        justify-content: flex-end;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+        margin: 1rem;
+        color: black;
+    }
+
+    .nav-list a:active {
+        font-weight: bold;
+        color: black;
+    }
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*y-axis*/
+    align-items: center; /*x-axis*/
+    width: 100%;
+    height: 30vh;
+}
+  
+  .welcome-section p {
+    font-size: 1rem;
+    font-weight: 200;
+    font-style: italic;
+  }
+
+.projects .projects-section-header {
+    margin-left: 1rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.projects a {
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.projects .project-details {
+    width: 100%;
+    margin: 2rem;
+    background-color: bisque;
+}
+
+.projects .project-date {
+    font-size: small;
+    float: left;
+
+}
+
+.projects .project-tag {
+    float: right;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 60px;
+    text-align: center;
+    margin-right: 4rem;
+
+}
+
+.projects .project-tag p {
+    margin: 5px;
+}
+
+.projects .project-title {
+    font-size: large;
+    font-weight: 900;
+    margin-left: 2rem;
+}
+
+.projects .project-info {
+    font-size: small;
+    text-align: justify;
+    word-spacing: 0.2rem;
+    margin: 0.5rem 2rem;
+}
+
+.projects .project-type {
+    display: inline-block;
+    margin: 2rem;
+    font-weight: bold;
+}
