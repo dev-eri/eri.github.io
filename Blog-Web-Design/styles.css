@@ -4,12 +4,17 @@
     padding: 0;
 }
 
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 img {
     width: 50vw;
 }
 
 .header-name {
     text-align: center;
+    margin: 1rem;
 }
 
 .main {
@@ -17,9 +22,16 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 5rem;
+    text-align: center;
 
 }
 
 .main .main-img {
     width: 30rem;
+    margin: 2rem;
+    background-color: aqua;
+}
+
+.main blockquote {
 }
