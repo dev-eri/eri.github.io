@@ -1,1 +1,24 @@
-Hello World
+/*base style*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 50vw;
+}
+
+.header-name {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.main .main-img {
+    width: 30rem;
+}
