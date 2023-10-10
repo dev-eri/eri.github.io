@@ -10,7 +10,7 @@ body {
 }
 
 img {
-    width: 100%;
+    width: 100px;
   }
 
 hr {
@@ -76,6 +76,7 @@ hr {
 
 .projects-grid {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
@@ -87,7 +88,7 @@ hr {
 }
 
 .projects .project-details {
-    width: 100%;
+    width: 100px;
     margin: 2rem;
     background-color: bisque;
 }
@@ -154,4 +155,10 @@ hr {
 
 .social-link-icon {
     color: black;
+}
+
+/*responsive style for desktop and mobile*/
+
+@media screen and {
+    
 }
