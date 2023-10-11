@@ -140,3 +140,26 @@ figure {
     padding: 1rem;
     background-color: #303030;
   }
+
+.contact-section {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links {
+    display: flex;
+    list-style-type: none;
+}
+/*
+.social-links li {
+    margin: 1rem;
+}
+*/
+.social-links li a {
+    text-decoration: none;
+    padding: 1rem;
+    color: #303030;
+}
