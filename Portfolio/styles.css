@@ -1,165 +1,142 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
+/*base styles*/
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 62.5%;
-    letter-spacing: 0.05rem;
-    color: #444
+    letter-spacing: 0.15rem;
+    word-spacing: 0.15rem;
+    color: #303030;
 }
 
 img {
-    width: 100px;
-  }
-
-hr {
-    margin-top: 0.5rem;
-}
-
-.nav {
-    position: fixed;
     width: 100%;
-    background-color: white;
+    display: block;
+    margin: 0 auto;
 }
 
-    .nav h4 {
-        float: left;
-        margin-top: 2rem;
-        margin-left: 1rem;
-    }
 
-    .nav h4 a {
-        text-decoration: none;
-        color: black;
-    }
-
-    .nav-list {
-        display: flex;
-        margin-top: 2rem;
-        margin-right: 2rem;
-        list-style-type: none;
-        justify-content: flex-end;
-    }
-
-    .nav-list a {
-        text-decoration: none;
-        margin: 1rem;
-        color: black;
-    }
-
-    .nav-list a:active {
-        font-weight: bold;
-        color: black;
-    }
+/*start*/
 
 .welcome-section {
+    margin: 1rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center; /*y-axis*/
-    align-items: center; /*x-axis*/
-    width: 100%;
-    height: 40vh;
-    font-size: medium;
+    justify-content: space-between;
 }
-  
-  .welcome-section p {
-    font-size: 1rem;
-    font-weight: 200;
-    font-style: italic;
-  }
 
-.projects .projects-section-header {
-    margin-top: -2.5rem;
+main h1 {
+    font-weight: bolder;
+    letter-spacing: 1rem;
+}
+
+main p {
+    display: inline-block;
+    margin: 0.5rem;
+    margin-left: 0;
+    padding: 0.5rem;
+    border: 1px solid #d9d9d9;
+    font-size: large;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    list-style-type: none;
+    height: 100%;
+}
+
+.nav-bar li {
+    margin: 1rem 0 0.5rem 0.5rem;
+}
+
+.nav-bar li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #303030;
+    font-weight: bold;
+    border-style: solid solid double double;
+    border-width: 0.01rem 0.01rem thick thick;
+    padding: 0.5rem;
+}
+
+figure {
+    border: 0.01rem solid #303030;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.about-section {
+    margin: 1rem;
+    justify-content: center;
+}
+
+.about-section h3 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 0.5rem;
+    margin-right: 0;
+    font-size: small;
+}
+
+.dev-name {
+    display: inline-block;
+    padding: 0.5rem;
+    border-style: solid solid double double;
+    border-width: 0.01rem 0.01rem thick thick;
+    font-size: larger;
     margin-left: 1rem;
 }
 
-.projects-grid {
+.skills, .skills-info {
     display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-}
-
-.projects a {
-    color: black;
-    border: 1px solid black;
-    text-decoration: none;
-    margin: 1rem;
-}
-
-.projects .project-details {
-    width: 100px;
-    margin: 2rem;
-    background-color: bisque;
-}
-
-.projects .project-date {
-    font-size: small;
-    float: left;
-
-}
-
-.projects .project-tag {
-    float: right;
-    border: 1px solid black;
-    border-radius: 20px;
-    width: 60px;
-    text-align: center;
-    margin-right: 4rem;
-
-}
-
-.projects .project-tag p {
-    margin: 5px;
-}
-
-.projects .project-title {
-    font-size: large;
-    font-weight: 900;
-    margin-left: 2rem;
-}
-
-.projects .project-info {
-    font-size: small;
-    text-align: justify;
-    word-spacing: 0.2rem;
-    margin: 0.5rem 2rem;
-}
-
-.projects .project-type {
-    display: inline-block;
-    margin: 2rem;
-    font-weight: bold;
-}
-
-.contact-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
-    width: 100%;
-    height: 10rem;
-    margin: 2rem;
-    margin-left: 0;
-    font-size: 0.8rem;
+    justify-content: center;
+    border: 1px solid #303030;
+    padding: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
-.social-icons {
+.skills {
+    background-color: #303030;
+    color: white;
+}
+
+.vl {
+    width: 0.2rem;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
+}
+.skills-info .vl {
+    width: 0.01rem;
+    padding: 0;
+    background-color: #303030;
+}
+
+.works-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    margin: 0.5rem;
-    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+.works-container a {
+    border: 1px solid #303030;
+    padding: 1rem;
     text-align: center;
+    text-decoration: none;
+    color: white;
 }
 
-.social-link-icon {
-    color: black;
-}
-
-/*responsive style for desktop and mobile*/
-
-@media screen and {
-    
-}
+.works-container a h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #303030;
+  }
