@@ -149,6 +149,11 @@ figure {
     justify-content: center;
 }
 
+.contact-section hr {
+    width: 100%;
+    height: 1px;
+}
+
 .social-links {
     display: flex;
     list-style-type: none;
