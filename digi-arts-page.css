@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+
+body {
+    color: #303030;
+    letter-spacing: 0.2rem;
+}
+
+header {
+    text-align: center;
+    margin: 0.2rem;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem;
+    border: 1px solid #303030;
+}
+
+h1 {
+    text-align: center;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    letter-spacing: 1rem;
+    border: 1px solid #303030;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -1rem;
+}
+
+.tools h3 {
+    border: 1px solid #303030;
+    text-align: center;
+    width: 49.5%;
+    padding: 1rem;
+}
+
+.tools h3:last-of-type {
+    padding-bottom: 0;
+}
+
+.army-project {
+    display: flex;
+}
+
+.seven-project {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5rem;
+    width: 50%;
+    margin-top: 0;
+}
+
+.seven-project img {
+    padding: 1rem;
+    filter: grayscale();
+}
+
+.seven-project img:hover {
+    filter: none;
+}
+
+.info {
+    width: 50%;
+    text-align: center;
+    margin: 0.2rem;
+}
+
+.info h3 {
+    border: 1px solid #303030;
+    margin: 0;
+}
+
+.info .artists {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info .hr {
+    width: 100%;
+    background-color: #303030;
+    height: 1.5rem;
+    margin-top: -1rem;
+}
+
+.artists p {
+    width: calc(100% / 3);
+    border: 1px solid #303030;
+    padding: 3px;
+    margin: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.artists p:first-of-type {
+    margin-left: 0;
+}
+
+.artists p:last-of-type {
+    margin-right: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    margin-top: 0.7rem;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #303030;
+}
+
+.grid-container .item:nth-child(2) {
+    grid-column: 2;
+    grid-row: span 2;
+}
+
+.grid-container .item:nth-child(6) {
+    border-left-style: none;
+}
+
+.grid-container .item:nth-child(10) {
+    grid-row: span 2;
+    border-bottom: none;
+}
+
+.grid-container .item:nth-child(11) {
+    border-top: 1px solid #303030;
+}
+
+.item img {
+    filter: grayscale();
+    border: 1px solid #303030;
+}
+
+.item img:hover {
+    filter: none;
+}
+
+.text-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.text-wrap:hover {
+    color: rebeccapurple;
+}

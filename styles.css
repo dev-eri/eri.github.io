@@ -1,9 +1,13 @@
-* {
+*, ::before, ::after {
     padding: 0;
     margin: 0;
-}
+    box-sizing: border-box;
+  }
 
 /*base styles*/
+html {
+    font-size: 65.2%;
+}
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 0.15rem;
@@ -12,9 +16,8 @@ body {
 }
 
 img {
-    width: 100%;
+    width: 50%;
     display: block;
-    margin: 0 auto;
 }
 
 
@@ -60,12 +63,7 @@ main p {
     border-style: solid solid double double;
     border-width: 0.01rem 0.01rem thick thick;
     padding: 0.5rem;
-}
-
-figure {
-    border: 0.01rem solid #303030;
-    margin: 1rem;
-    padding: 1rem;
+    font-size: medium;
 }
 
 .about-section {
@@ -91,36 +89,77 @@ figure {
     margin-left: 1rem;
 }
 
-.skills, .skills-info {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #303030;
-    padding: 0.5rem;
-    margin-bottom: 0.25rem;
-}
-
 .skills {
     background-color: #303030;
     color: white;
 }
 
-.vl {
-    width: 0.2rem;
-    height: 100%;
-    background-color: white;
-    margin: 0 auto;
+.skills, .skills-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 0.25rem;
+    border: 1px solid #303030;
 }
-.skills-info .vl {
-    width: 0.01rem;
-    padding: 0;
-    background-color: #303030;
+
+.skills-info {
+    font-size: small;
+    font-weight: lighter;
+}
+
+.skills h2:nth-of-type(2) {
+    border-left: solid #d9d9d9;
+    border-right: solid #d9d9d9;
+}
+
+.skills-info p:nth-of-type(2) {
+    border-left: solid #303030;
+    border-right: solid #303030;
+}
+
+#dets {
+    border: 0.01rem solid #303030;
+    margin: 1rem;
+}
+
+figure {
+    display: flex;
+}
+
+figure img{
+    padding: 1rem;
+}
+
+.dev-skills {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-size: small;
+}
+
+.dev-skills ul {
+    margin: 1rem 2rem;
+    list-style-type: square;
+}
+
+.dev-skills li {
+    margin: 1.2rem 0;
+}
+
+.works h3 {
+    text-align: left;
+    margin: 1rem;
+    font-size: 3rem;
 }
 
 .works-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin: 0 1rem;
 }
@@ -131,6 +170,7 @@ figure {
     text-align: center;
     text-decoration: none;
     color: white;
+    font-size: medium;
 }
 
 .works-container a h2 {
