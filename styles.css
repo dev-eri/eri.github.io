@@ -151,9 +151,13 @@ figure img{
     margin: 1.2rem 0;
 }
 
+.works {
+    margin: 0 1rem;
+}
+
 .works h3 {
     text-align: left;
-    margin: 1rem;
+    margin: 1rem 0;
     font-size: 3rem;
 }
 
@@ -161,11 +165,10 @@ figure img{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    margin: 0 1rem;
 }
 
 .works-container a {
-    border: 1px solid #303030;
+    box-shadow: -2px 5px 5px #aaa;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
@@ -179,6 +182,11 @@ figure img{
     justify-content: center;
     padding: 1rem;
     background-color: #303030;
+  }
+
+  .works-container a img {
+    margin: auto;
+    width: 100%;
   }
 
 .contact-section {
